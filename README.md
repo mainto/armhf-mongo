@@ -1,4 +1,4 @@
-# armfh-mongo
+# armhf-mongo
 
 Using MongoDB binaries for raspberry pi, build a docker image for ARM
 
