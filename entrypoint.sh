@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+if [ "${1:0:1}" = '-' ]; then
+	set -- mongod "$@"
+fi
+
+if [ "$1" = 'mongod' ]; then
+	exec "$@" --config /etc/mongodb.conf
+fi
+
+exec "$@"
